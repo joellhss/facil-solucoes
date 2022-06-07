@@ -41,7 +41,7 @@ function recordClick (convenio) {
 function infoBloqueio() {
     // ADICIONAR CONVENIOS NA ARRAY
 
-    let convenios = ["Aracati", "Barbalha", "Chorozinho", "Crateus", "Crato", "Ico", "Juazeiro-do-Norte", "Tiangua", "Dourados", "Ipatinga", "Cameta", "Itupiranga", "Maraba", "AlagoaGrande", "Cabedelo", "Cajazeiras", "CampinaGrande", "DefensoriaPB", "Esperanca", "Guarabira", "Itabaiana", "Mamanguape", "Monteiro", "Patos", "PedrasDeFogo", "Queimadas", "RioTinto", "SaoBento", "Sape", "Sume", "TCEPB", "TJPB"]
+    let convenios = ["Aracati", "Barbalha", "Chorozinho", "Crateus", "Crato", "Ico", "Juazeiro-do-Norte", "Tiangua", "Dourados", "Ipatinga", "Cameta", "Itupiranga", "Maraba", "AlagoaGrande", "Cabedelo", "Cajazeiras", "CampinaGrande", "DefensoriaPB", "Esperanca", "Guarabira", "Itabaiana", "Mamanguape", "Monteiro", "Patos", "PedrasDeFogo", "Queimadas", "RioTinto", "SaoBento", "Sape", "Sume", "TCEPB", "TJPB", "Piraquara", "PEConsig", "Caruaru", "DefensoriaPE", "Floresta", "Garanhuns", "Jaboatao", "Macaparana", "Olinda", "Paulista", "Recife", "SaoVicente", "SerraTalhada", "Vicencia"]
 
     // -------------------------------------------------
     

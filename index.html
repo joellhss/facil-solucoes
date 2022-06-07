@@ -114,16 +114,21 @@
                 </ul>
             </div>
 
-              <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-secondary active" onclick="mudaTema('off')">
-                  <input type="radio" name="options" id="option1" autocomplete="off" checked> 
-                  <img src="img/tema-claro.svg" alt="" srcset="" width="25" height="25">
-                </label>
-                <label class="btn btn-secondary" onclick="mudaTema('on')">
-                  <input type="radio" name="options" id="option2" autocomplete="off"> 
-                  <img src="img/tema-escuro.svg" alt="" srcset="" width="25" height="25">
-                </label>
+            <div class="btn-group">
+              <button type="button" class="btn btn-secondary dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="tema">
+                Tema
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#" onclick="mudaTema('off')">
+                  <img src="img/tema-claro.svg" alt="" srcset="" width="20" height="20" class="d-inline-block align-top">
+                 Claro
+                </a>
+                <a class="dropdown-item" href="#" onclick="mudaTema('on')">
+                  <img src="img/tema-escuro.svg" alt="" srcset="" width="20" height="20" class="d-inline-block align-top">
+                  Escuro</a>
               </div>
+            </div>
+
 
         </nav>
     </header>
@@ -158,7 +163,6 @@
             
 
             <!-- Botão e Modal  CEARÁ-->
-
 
             <button type="button" class="btn btn-light" id="conv" data-toggle="modal" data-target="#modalCE">Ceará</button>
 
@@ -389,7 +393,6 @@
 
             <!-- Botão e Modal  Mato Grosso do sul-->
 
-
             <button type="button" class="btn btn-light" id="conv" data-toggle="modal" data-target="#modalMS">Mato Grosso do Sul</button>
 
             <div class="modal fade" id="modalMS" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
@@ -445,7 +448,6 @@
 
             <!-- Botão e Modal  Minas Gerais-->
 
-
             <button type="button" class="btn btn-light" id="conv" data-toggle="modal" data-target="#modalMG">Minas Gerais</button>
 
             <div class="modal fade" id="modalMG" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
@@ -499,7 +501,6 @@
 
 
             <!-- Botão e Modal  Pará-->
-
 
             <button type="button" class="btn btn-light" id="conv" data-toggle="modal" data-target="#modalPA">Pará</button>
 
@@ -606,7 +607,6 @@
 
 
             <!-- Botão e Modal  Paraíba-->
-
 
             <button type="button" class="btn btn-light" id="conv" data-toggle="modal" data-target="#modalPB">Paraíba</button>
 
@@ -1128,10 +1128,437 @@
             </div>
 
 
+            <!-- Botão e Modal  Paraná-->
+
+            <button type="button" class="btn btn-light" id="conv" data-toggle="modal" data-target="#modalPR">Paraná</button>
+
+            <div class="modal fade" id="modalPR" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="TituloModalCentralizado">Paraná</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid">
+
+                        <div class="btn-group mr-2 mb-2">
+                          <div>
+                            <button type="button" class="btn btn-light dropdown-toggle" id="conv2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Piraquara
+                            </button>
+                            <div class="dropdown-menu">
+                              
+                              <a class="dropdown-item" href="https://www.faciltecnologia.com.br/consigfacil/piraquara/" target="_blank" onclick= "recordClick('Piraquara')">
+                                <img src="img/consigfacil-logo.svg" width="17" height="17" alt="">
+                                <span class="font-weight-bold">ConsigFácil</span>
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/browse/SYS-244" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="17" height="17" class="d-inline-block align-top">
+                                SYS
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://piraquara.pr.gov.br/" target="_blank">
+                                <img src="img/portal-logo.svg" width="17" height="17" class="d-inline-block align-top" alt="">
+                                Portal
+                              </a>
+                            </div>
+                            <div class="text-center m-0 p- font-italic bloqueioCor" id="Piraquara"></div>
+                          </div>
+                        </div> <!-- Piraquara -->
+                          
+                        
+
+
+ 
+                         <!-- Adicionar próximos convênios de PARÁ AQUI!!-->
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Botão e Modal  Pernambuco-->
+
+            <button type="button" class="btn btn-light" id="conv" data-toggle="modal" data-target="#modalPE">Pernambuco</button>
+
+            <div class="modal fade" id="modalPE" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="TituloModalCentralizado">Pernambuco</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid">
+
+                        <div class="btn-group mr-2 mb-2">
+                          <div>
+                            <button type="button" class="btn btn-light dropdown-toggle" id="conv2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              PEConsig
+                            </button>
+                            <div class="dropdown-menu">
+                              
+                              <a class="dropdown-item" href="https://www.peconsig.pe.gov.br" target="_blank" onclick= "recordClick('PEConsig')">
+                                <img src="img/consigfacil-logo.svg" width="17" height="17" alt="">
+                                <span class="font-weight-bold">ConsigFácil</span>
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/browse/SYS-1" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="17" height="17" class="d-inline-block align-top">
+                                SYS
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="www.portaldoservidor.pe.gov.br/web/portal-do-servidor" target="_blank">
+                                <img src="img/portal-logo.svg" width="17" height="17" class="d-inline-block align-top" alt="">
+                                Portal
+                              </a>
+                            </div>
+                            <div class="text-center m-0 p- font-italic bloqueioCor" id="PEConsig"></div>
+                          </div>
+                        </div> <!-- PEConsig -->
+
+                        <div class="btn-group mr-2 mb-2">
+                          <div>
+                            <button type="button" class="btn btn-light dropdown-toggle" id="conv2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Caruaru
+                            </button>
+                            <div class="dropdown-menu">
+                              
+                              <a class="dropdown-item" href="https://www.faciltecnologia.com.br/consigfacil/caruaru/" target="_blank" onclick= "recordClick('Caruaru')">
+                                <img src="img/consigfacil-logo.svg" width="17" height="17" alt="">
+                                <span class="font-weight-bold">ConsigFácil</span>
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/browse/SYS-190" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="17" height="17" class="d-inline-block align-top">
+                                SYS
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://caruaru.pe.gov.br/" target="_blank">
+                                <img src="img/portal-logo.svg" width="17" height="17" class="d-inline-block align-top" alt="">
+                                Portal
+                              </a>
+                            </div>
+                            <div class="text-center m-0 p- font-italic bloqueioCor" id="Caruaru"></div>
+                          </div>
+                        </div> <!-- Caruaru -->
+
+                        <div class="btn-group mr-2 mb-2">
+                          <div>
+                            <button type="button" class="btn btn-light dropdown-toggle" id="conv2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Defensoria
+                            </button>
+                            <div class="dropdown-menu">
+                              
+                              <a class="dropdown-item" href="https://www.faciltecnologia.com.br/consigfacil/defensoriape/" target="_blank" onclick= "recordClick('DefensoriaPE')">
+                                <img src="img/consigfacil-logo.svg" width="17" height="17" alt="">
+                                <span class="font-weight-bold">ConsigFácil</span>
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/browse/SYS-164" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="17" height="17" class="d-inline-block align-top">
+                                SYS
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://www.defensoria.pe.def.br/" target="_blank">
+                                <img src="img/portal-logo.svg" width="17" height="17" class="d-inline-block align-top" alt="">
+                                Portal
+                              </a>
+                            </div>
+                            <div class="text-center m-0 p- font-italic bloqueioCor" id="DefensoriaPE"></div>
+                          </div>
+                        </div> <!-- DefensoriaPE -->
+
+                        <div class="btn-group mr-2 mb-2">
+                          <div>
+                            <button type="button" class="btn btn-light dropdown-toggle" id="conv2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Floresta
+                            </button>
+                            <div class="dropdown-menu">
+                              
+                              <a class="dropdown-item" href="https://www.faciltecnologia.com.br/consigfacil/floresta/" target="_blank" onclick= "recordClick('Floresta')">
+                                <img src="img/consigfacil-logo.svg" width="17" height="17" alt="">
+                                <span class="font-weight-bold">ConsigFácil</span>
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/browse/SYS-24" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="17" height="17" class="d-inline-block align-top">
+                                SYS
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://floresta.pe.gov.br/" target="_blank">
+                                <img src="img/portal-logo.svg" width="17" height="17" class="d-inline-block align-top" alt="">
+                                Portal
+                              </a>
+                            </div>
+                            <div class="text-center m-0 p- font-italic bloqueioCor" id="Floresta"></div>
+                          </div>
+                        </div> <!-- Floresta -->
+
+                        <div class="btn-group mr-2 mb-2">
+                          <div>
+                            <button type="button" class="btn btn-light dropdown-toggle" id="conv2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Garanhuns
+                            </button>
+                            <div class="dropdown-menu">
+                              
+                              <a class="dropdown-item" href="https://www.faciltecnologia.com.br/consigfacil/garanhuns/" target="_blank" onclick= "recordClick('Garanhuns')">
+                                <img src="img/consigfacil-logo.svg" width="17" height="17" alt="">
+                                <span class="font-weight-bold">ConsigFácil</span>
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/browse/SYS-208" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="17" height="17" class="d-inline-block align-top">
+                                SYS
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://garanhuns.pe.gov.br/" target="_blank">
+                                <img src="img/portal-logo.svg" width="17" height="17" class="d-inline-block align-top" alt="">
+                                Portal
+                              </a>
+                            </div>
+                            <div class="text-center m-0 p- font-italic bloqueioCor" id="Garanhuns"></div>
+                          </div>
+                        </div> <!-- Garanhuns -->
+
+                        <div class="btn-group mr-2 mb-2">
+                          <div>
+                            <button type="button" class="btn btn-light dropdown-toggle" id="conv2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Jaboatão
+                            </button>
+                            <div class="dropdown-menu">
+                              
+                              <a class="dropdown-item" href="https://www.faciltecnologia.com.br/consigfacil/jaboatao/" target="_blank" onclick= "recordClick('Jaboatao')">
+                                <img src="img/consigfacil-logo.svg" width="17" height="17" alt="">
+                                <span class="font-weight-bold">ConsigFácil</span>
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/browse/SYS-19" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="17" height="17" class="d-inline-block align-top">
+                                SYS
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://jaboatao.pe.gov.br/" target="_blank">
+                                <img src="img/portal-logo.svg" width="17" height="17" class="d-inline-block align-top" alt="">
+                                Portal
+                              </a>
+                            </div>
+                            <div class="text-center m-0 p- font-italic bloqueioCor" id="Jaboatao"></div>
+                          </div>
+                        </div> <!-- Jaboatão -->
+
+                        <div class="btn-group mr-2 mb-2">
+                          <div>
+                            <button type="button" class="btn btn-light dropdown-toggle" id="conv2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Macaparana
+                            </button>
+                            <div class="dropdown-menu">
+                              
+                              <a class="dropdown-item" href="https://www.faciltecnologia.com.br/consigfacil/macaparana/" target="_blank" onclick= "recordClick('Macaparana')">
+                                <img src="img/consigfacil-logo.svg" width="17" height="17" alt="">
+                                <span class="font-weight-bold">ConsigFácil</span>
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/browse/SYS-71" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="17" height="17" class="d-inline-block align-top">
+                                SYS
+                              </a>
+                              <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/browse/SYS-72" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="17" height="17" class="d-inline-block align-top">
+                                SYS - Prev
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://macaparana.pe.gov.br/" target="_blank">
+                                <img src="img/portal-logo.svg" width="17" height="17" class="d-inline-block align-top" alt="">
+                                Portal
+                              </a>
+                            </div>
+                            <div class="text-center m-0 p- font-italic bloqueioCor" id="Macaparana"></div>
+                          </div>
+                        </div> <!-- Macaparana -->
+
+                        <div class="btn-group mr-2 mb-2">
+                          <div>
+                            <button type="button" class="btn btn-light dropdown-toggle" id="conv2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Olinda
+                            </button>
+                            <div class="dropdown-menu">
+                              
+                              <a class="dropdown-item" href="https://www.faciltecnologia.com.br/consigfacil/olinda/" target="_blank" onclick= "recordClick('Olinda')">
+                                <img src="img/consigfacil-logo.svg" width="17" height="17" alt="">
+                                <span class="font-weight-bold">ConsigFácil</span>
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/browse/SYS-179" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="17" height="17" class="d-inline-block align-top">
+                                SYS
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://olinda.pe.gov.br/" target="_blank">
+                                <img src="img/portal-logo.svg" width="17" height="17" class="d-inline-block align-top" alt="">
+                                Portal
+                              </a>
+                            </div>
+                            <div class="text-center m-0 p- font-italic bloqueioCor" id="Olinda"></div>
+                          </div>
+                        </div> <!-- Olinda -->
+
+                        <div class="btn-group mr-2 mb-2">
+                          <div>
+                            <button type="button" class="btn btn-light dropdown-toggle" id="conv2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Paulista
+                            </button>
+                            <div class="dropdown-menu">
+                              
+                              <a class="dropdown-item" href="https://www.faciltecnologia.com.br/consigfacil/paulista/" target="_blank" onclick= "recordClick('Paulista')">
+                                <img src="img/consigfacil-logo.svg" width="17" height="17" alt="">
+                                <span class="font-weight-bold">ConsigFácil</span>
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/browse/SYS-220" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="17" height="17" class="d-inline-block align-top">
+                                SYS
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://paulista.pe.gov.br/" target="_blank">
+                                <img src="img/portal-logo.svg" width="17" height="17" class="d-inline-block align-top" alt="">
+                                Portal
+                              </a>
+                            </div>
+                            <div class="text-center m-0 p- font-italic bloqueioCor" id="Paulista"></div>
+                          </div>
+                        </div> <!-- Paulista -->
+
+                        <div class="btn-group mr-2 mb-2">
+                          <div>
+                            <button type="button" class="btn btn-light dropdown-toggle" id="conv2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Recife
+                            </button>
+                            <div class="dropdown-menu">
+                              
+                              <a class="dropdown-item" href="https://www.faciltecnologia.com.br/consigfacil/recife/" target="_blank" onclick= "recordClick('Recife')">
+                                <img src="img/consigfacil-logo.svg" width="17" height="17" alt="">
+                                <span class="font-weight-bold">ConsigFácil</span>
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/browse/SYS-22" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="17" height="17" class="d-inline-block align-top">
+                                SYS
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://recife.pe.gov.br/" target="_blank">
+                                <img src="img/portal-logo.svg" width="17" height="17" class="d-inline-block align-top" alt="">
+                                Portal
+                              </a>
+                            </div>
+                            <div class="text-center m-0 p- font-italic bloqueioCor" id="Recife"></div>
+                          </div>
+                        </div> <!-- Recife -->
+
+                        <div class="btn-group mr-2 mb-2">
+                          <div>
+                            <button type="button" class="btn btn-light dropdown-toggle" id="conv2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              São Vicente (inativ.)
+                            </button>
+                            <div class="dropdown-menu">
+                              
+                              <a class="dropdown-item" href="https://www.faciltecnologia.com.br/consigfacil/saovicente/" target="_blank" onclick= "recordClick('SaoVicente')">
+                                <img src="img/consigfacil-logo.svg" width="17" height="17" alt="">
+                                <span class="font-weight-bold">ConsigFácil</span>
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/browse/SYS-74" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="17" height="17" class="d-inline-block align-top">
+                                SYS
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://saovicente.pe.gov.br/" target="_blank">
+                                <img src="img/portal-logo.svg" width="17" height="17" class="d-inline-block align-top" alt="">
+                                Portal
+                              </a>
+                            </div>
+                            <div class="text-center m-0 p- font-italic bloqueioCor" id="SaoVicente"></div>
+                          </div>
+                        </div> <!-- São Vicente -->
+
+                        <div class="btn-group mr-2 mb-2">
+                          <div>
+                            <button type="button" class="btn btn-light dropdown-toggle" id="conv2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Serra Talhada
+                            </button>
+                            <div class="dropdown-menu">
+                              
+                              <a class="dropdown-item" href="https://www.faciltecnologia.com.br/consigfacil/serratalhada/" target="_blank" onclick= "recordClick('SerraTalhada')">
+                                <img src="img/consigfacil-logo.svg" width="17" height="17" alt="">
+                                <span class="font-weight-bold">ConsigFácil</span>
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/browse/SYS-146" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="17" height="17" class="d-inline-block align-top">
+                                SYS - 146
+                              </a>
+                              <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/browse/SYS-177" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="17" height="17" class="d-inline-block align-top">
+                                SYS - 177
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://serratalhada.pe.gov.br/" target="_blank">
+                                <img src="img/portal-logo.svg" width="17" height="17" class="d-inline-block align-top" alt="">
+                                Portal
+                              </a>
+                            </div>
+                            <div class="text-center m-0 p- font-italic bloqueioCor" id="SerraTalhada"></div>
+                          </div>
+                        </div> <!-- Serra Talhada -->
+
+                        <div class="btn-group mr-2 mb-2">
+                          <div>
+                            <button type="button" class="btn btn-light dropdown-toggle" id="conv2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Vicência
+                            </button>
+                            <div class="dropdown-menu">
+                              
+                              <a class="dropdown-item" href="https://www.faciltecnologia.com.br/consigfacil/vicencia/" target="_blank" onclick= "recordClick('Vicencia')">
+                                <img src="img/consigfacil-logo.svg" width="17" height="17" alt="">
+                                <span class="font-weight-bold">ConsigFácil</span>
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/browse/SYS-18" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="17" height="17" class="d-inline-block align-top">
+                                SYS
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://vicencia.pe.gov.br/" target="_blank">
+                                <img src="img/portal-logo.svg" width="17" height="17" class="d-inline-block align-top" alt="">
+                                Portal
+                              </a>
+                            </div>
+                            <div class="text-center m-0 p- font-italic bloqueioCor" id="Vicencia"></div>
+                          </div>
+                        </div> <!-- Vicência -->
+
+                          
+                      
+ 
+                         <!-- Adicionar próximos convênios de PERNAMBUCO AQUI!!-->
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
             
             
-            <button type="button" class="btn btn-light" id="conv">Paraná</button>
-            <button type="button" class="btn btn-light" id="conv">Pernambuco</button>
             <button type="button" class="btn btn-light" id="conv">Rio de Janeiro</button>
             <button type="button" class="btn btn-light" id="conv">Rio Grande do Norte</button>
             <button type="button" class="btn btn-light" id="conv">Rio de Grande do Sul</button>
