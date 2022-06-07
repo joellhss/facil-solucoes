@@ -1,0 +1,250 @@
+:root {
+    --bg-color: #042538;
+    --blue: #063651;
+    --blue2: #0E547C;
+    --blue3: #317297;
+    --white: #FFFFFF;
+    --white2: #EBEBEB;
+  }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100vw;
+    background-color: var(--white);
+}
+
+header {
+      background-color: var(--blue);
+  }
+
+.topo {
+    background-color: var(--blue2);
+}
+
+.form {
+    width: 30vw;
+    height: 30px;
+    background: #EBEBEB;
+    border: none;
+    border-radius: 20px;
+} 
+.form input{
+    width: 85%;
+    height: 85%;
+    background: #EBEBEB;
+    border: none;
+    outline-style: none;
+}
+
+
+  .form button {
+      border: none;
+      outline-style: none;
+      width: 30px;
+      background-color: var(--white2);
+  }
+
+  .form img {
+      width: 20px;
+  }
+
+
+  .form button img {
+      width: 20px;
+  }
+
+#conv {
+    background-color: var(--blue);
+    border: none;
+    width: 275px;
+    height: 50px;
+    color: var(--white);
+    margin: 10px 06px 0 0;
+    font-size: 18px;
+}
+
+#conv:hover {
+    background-color: var(--blue2);
+}
+
+#conv2 {
+    background-color: var(--blue);
+    border: none;
+    width: 200px;
+    height: 40px;
+    color: var(--white);
+    font-size: 18px;
+}
+
+#conv2:hover {
+    background-color: var(--blue2);
+}
+
+.bloqueioCor {
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #c3d1d9;
+    color: var(--blue);
+}
+
+
+.h3 {
+    color: var(--blue);
+}
+
+
+.agendaGoogle {
+    border-radius: 05px;
+}
+
+.dark {
+    background-color: #042538
+}
+
+.dark body {
+    background-color: #042538;
+}
+
+.dark .h3 {
+    color: var(--white);
+}
+
+.dark .modal-content {
+    color: #FFFFFF;
+    background-color: #042538;
+}
+
+.dark .close {
+    color: #FFFFFF;
+}
+
+.dark #conv2 {
+    background-color: var(--blue2);
+}
+
+.dark #conv2:hover {
+    background-color: var(--blue3);
+}
+
+.dark #conv {
+    background-color: var(--blue2);
+}
+
+.dark #conv:hover {
+    background-color: var(--blue3);
+}
+
+.dark .form {
+    background-color: var(--bg-color);
+}
+.dark .form button {
+    background-color: var(--bg-color);
+}
+.dark .form button img {
+    fill: white;
+}
+.dark #google-input {
+    color: #FFFFFF;
+    background-color: var(--bg-color);
+}
+
+.dark #google-input::placeholder {
+    color: #b3b3b3;
+}
+
+.ck-editor__editable_inline {
+    min-height: 220px;
+}
+
+#buttontxt {
+    background-color: var(--blue2);
+    border: none;
+}
+#buttontxt:hover {
+    background-color: var(--blue3);
+}
+
+.fechamento {
+    width: 260px;
+    background-color: var(--blue);
+    border: none;
+    height: 80px;
+    color: var(--white);
+    font-size: 16px;
+    border-radius: 05px;
+}
+
+.fechamento:hover {
+    background-color: var(--blue2);
+    color: white;
+}
+#fechamento2 {
+    width: 90px;
+    background-color: var(--blue);
+    border: none;
+    height: 80px;
+    color: var(--white);
+    font-size: 16px;
+    border-radius: 05px;
+}
+
+#fechamento2:hover {
+    background-color: var(--blue2);
+    color: white;
+}
+
+.dark .fechamento {
+    background-color: var(--blue2);
+    color: var(--white);
+}
+
+.dark .fechamento:hover {
+    background-color: var(--blue3);
+    color: white;
+}
+
+.dark #fechamento2 {
+    background-color: var(--blue2);
+    color: var(--white);
+}
+
+.dark #fechamento2:hover {
+    background-color: var(--blue3);
+    color: white;
+}
+
+#card {
+    color: #042538;
+}
+
+#form {
+    background-color: #042538;
+}
+
+.dark .notas {
+    background-color: #042538;
+    color: #ffffff;
+    
+}
+
+.dark .notas::placeholder{
+color: #ffffff;
+    
+}
+
+.dark .card {
+    background-color: var(--blue2);
+    color: #FFFFFF;
+}
+
+.dark .card-title {
+    color: #FFFFFF;
+}
+
+.dark .card-header {
+    background-color: var(--blue);
+    color: var(--white2);
+}
+.dark .card-text {
+    color: var(--white2);
+}

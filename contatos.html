@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fácil Suporte</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="funcoes()">
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
+            <a class="navbar-brand mb-2" href="index.html">
+                <img src="img/logo-FACIL-SUPORTE.png" height="80" alt="">
+              </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item mr-3">
+                      <a class="nav-link" href="index.html">
+                      <img src="img/pagina-inicial.svg" width="20" height="20" class="d-inline-block align-top" alt="">
+                      INÍCIO
+                      </a>
+                     </li>
+                    
+                    <li class="nav-item dropdown mr-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/chat-svgrepo-com.svg" width="20" height="20" class="d-inline-block align-top" alt="">
+                        CHAT
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://www.socialintents.com/chat.do" target="_blank">
+                                <img src="img/social-intents.png" alt="" width="20" height="20" class="d-inline-block align-top">
+                                <span>  </span> Social Intents</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://mail.google.com/chat/u/0/" target="_blank">
+                                <img src="https://www.gstatic.com/images/branding/product/1x/hh_chat_64dp.png" alt="" width="22" height="22" class="d-inline-block align-top">
+                                Google Chat</a>
+                          </div>
+                    </li>
+
+                    <li class="nav-item dropdown mr-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/jira-logo.svg" width="20" height="20" class="d-inline-block align-top" alt="">
+                        JIRA
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <p class="text-center text-muted">Nova solicitação</p>
+                            <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/servicedesk/customer/portal/15/group/38/create/176" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="20" height="20" class="d-inline-block align-top">
+                                Criar AJUDA</a>
+                            <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/servicedesk/customer/portal/1/create/13" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="20" height="20" class="d-inline-block align-top">
+                                Criar TKT</a>
+                                <div class="dropdown-divider"></div>
+
+                            <p class="text-center text-muted">Filas</p>
+                            <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/browse/AJUDA" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="20" height="20" class="d-inline-block align-top">
+                                Fácil Atendimento - AJUDA</a>
+                            <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/browse/TKT" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="20" height="20" class="d-inline-block align-top">
+                                Fácil Service Desk - TKT</a>
+                            <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/browse/SYS" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="20" height="20" class="d-inline-block align-top">
+                                Sistemas Fácil - SYS</a>
+                                <div class="dropdown-divider"></div>
+
+                            <p class="text-center text-muted">Dashboard's</p>
+                            <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/jira/your-work" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="20" height="20" class="d-inline-block align-top">
+                                Seu trabalho</a>
+                            <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/secure/Dashboard.jspa?selectPageId=11075" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="20" height="20" class="d-inline-block align-top">
+                                Atendimentos</a>
+                            <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/jira/servicedesk/projects/AJUDA/reports/all-rating/timescale/8" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="20" height="20" class="d-inline-block align-top">
+                                Satisfação do cliente</a>
+                                <div class="dropdown-divider"></div>
+
+                            <a class="dropdown-item" href="https://faciltecnologia.atlassian.net/servicedesk/customer/portals" target="_blank">
+                                <img src="img/3d65fa_6508cfb0ea8e4032a527724d27ec1b5f_mv2.webp" alt="" width="20" height="20" class="d-inline-block align-top">
+                                Centro de Ajuda</a>
+
+                          </div>
+                    </li>
+
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="https://admin.oitchau.com.br/punches/" target="_blank">
+                        <img src="img/oitchau-logo.svg" width="20" height="20" class="d-inline-block align-top" alt="">
+                        OITCHAU
+                        </a>
+                    </li>
+
+                    <li class="nav-item mr-3">
+                        <a class="nav-link active" href="contatos.html">
+                        <img src="img/contato-logo.svg" width="20" height="20" class="d-inline-block align-top" alt="">
+                        CONTATOS
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active" onclick="mudaTema('off')">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked> 
+                  <img src="img/tema-claro.svg" alt="" srcset="" width="25" height="25">
+                </label>
+                <label class="btn btn-secondary" onclick="mudaTema('on')">
+                  <input type="radio" name="options" id="option2" autocomplete="off"> 
+                  <img src="img/tema-escuro.svg" alt="" srcset="" width="25" height="25">
+                </label>
+              </div>
+
+        </nav>
+    </header>
+
+    <div class="d-flex justify-content-around align-items-center topo p-2">
+
+        <div class="d-flex align-items-center font-weight-bold">
+            <p class="m-0 text-white ali"><img src="img/calendar.svg" alt="" width="20"> <span id="current_date" class="ml-1"></span></p>
+            <p class="m-0 ml-3 text-light"><img src="img/clock.svg" alt="" width="20"><span class="ml-2" id="current_hour"></span></p>
+        </div>
+
+
+        <form class="d-flex align-items-center form" action="" method="post" id="frm-msg">
+            <img id="google-logo" src="img/google-logo.svg" alt="" srcset="" class="d-inline-block align-center ml-2">
+            <input id="google-input" class="ml-1" type="search" name="Google" placeholder="Pesquise no Google" size="29" aria-label="Pesquise no Google" (keyup.enter)="search()">
+            <button type="button" class="btn btn-primary p-0 mr-2" onclick="search()" id="google-search">
+                <img src="img/search-svgrepo-com.svg" alt="" srcset="" class="d-inline-block align-center">
+            </button>
+        </form>
+    </div>
+
+
+    <div class="d-flex justify-content-center align-items-center m-5">
+
+            <p class="h1 text-light m-5">Em construção...</p>
+
+
+    </div>
+
+
+    
+
+
+
+ <script>
+   function funcoes() {
+    startTime();
+    mudaTemaAutomatico();
+    infoBloqueio();
+    
+
+   }
+ </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/data-hora.js"></script>
+    <script src="js/record-click.js"></script>
+
+
+</body>
+</html>
