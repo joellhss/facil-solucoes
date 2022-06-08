@@ -166,10 +166,18 @@ header {
 }
 
 #buttontxt {
-    background-color: var(--blue2);
+    background-color: var(--blue);
     border: none;
 }
 #buttontxt:hover {
+    background-color: var(--blue2);
+}
+
+.dark #buttontxt {
+    background-color: var(--blue2);
+    border: none;
+}
+.dark #buttontxt:hover {
     background-color: var(--blue3);
 }
 
@@ -231,14 +239,14 @@ header {
 }
 
 .dark .notas {
-    background-color: #042538;
+    background-color: var(--blue2);
     color: #ffffff;
+    border: none;
     
 }
 
 .dark .notas::placeholder{
-color: #ffffff;
-    
+color: #ffffff;   
 }
 
 .dark .card {
@@ -256,4 +264,17 @@ color: #ffffff;
 }
 .dark .card-text {
     color: var(--white2);
+}
+
+.notasAtendimento {
+    width: 90%;
+}
+
+#btnEdit {
+    background-color: #063651;
+    position: relative;
+    left: 25%;
+    color: #FFFFFF;
+    width: 50%;
+    border: none;
 }

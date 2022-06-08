@@ -41,7 +41,7 @@ function recordClick (convenio) {
 function infoBloqueio() {
     // ADICIONAR CONVENIOS NA ARRAY
 
-    let convenios = ["Aracati", "Barbalha", "Chorozinho", "Crateus", "Crato", "Ico", "Juazeiro-do-Norte", "Tiangua", "Dourados", "Ipatinga", "Cameta", "Itupiranga", "Maraba", "AlagoaGrande", "Cabedelo", "Cajazeiras", "CampinaGrande", "DefensoriaPB", "Esperanca", "Guarabira", "Itabaiana", "Mamanguape", "Monteiro", "Patos", "PedrasDeFogo", "Queimadas", "RioTinto", "SaoBento", "Sape", "Sume", "TCEPB", "TJPB", "Piraquara", "PEConsig", "Caruaru", "DefensoriaPE", "Floresta", "Garanhuns", "Jaboatao", "Macaparana", "Olinda", "Paulista", "Recife", "SaoVicente", "SerraTalhada", "Vicencia"]
+    let convenios = ["Aracati", "Barbalha", "Chorozinho", "Crateus", "Crato", "Ico", "Juazeiro-do-Norte", "Tiangua", "Dourados", "Ipatinga", "Cameta", "Itupiranga", "Maraba", "AlagoaGrande", "Cabedelo", "Cajazeiras", "CampinaGrande", "DefensoriaPB", "Esperanca", "Guarabira", "Itabaiana", "Mamanguape", "Monteiro", "Patos", "PedrasDeFogo", "Queimadas", "RioTinto", "SaoBento", "Sape", "Sume", "TCEPB", "TJPB", "Piraquara", "PEConsig", "Caruaru", "DefensoriaPE", "Floresta", "Garanhuns", "Jaboatao", "Macaparana", "Olinda", "Paulista", "Recife", "SaoVicente", "SerraTalhada", "Vicencia", "Buzios", "Itatiaia", "Niteroi", "Resende", "Apodi", "AreiaBranca", "Barauna", "CAERN", "Caico", "Caraubas", "Ipanguacu", "Jucurutu", "LagoaNova", "MonteAlegre", "Parelhas", "Tibau", "TRTRS", "Cacapava"]
 
     // -------------------------------------------------
     
@@ -166,15 +166,16 @@ function mostrarLista() {
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">${notas[i].nome}</h5>
-                            <p class="card-text">Matrícula: ${notas[i].matricula}</p>
-                            <p class="card-text">Telefone: ${notas[i].telefone}</p>
-                            <p class="card-text">Observações: ${notas[i].textArea}</p>
+                            <p class="card-text"><span class="font-weight-bold">Matrícula: </span>${notas[i].matricula}</p>
+                            <p class="card-text"><span class="font-weight-bold">Telefone: </span>${notas[i].telefone}</p>
+                            <p class="card-text"><span class="font-weight-bold">Observações: </span>${notas[i].textArea}</p>
                             </div>
+                            <button type="button" class="btn btn-secondary btn-sm mb-2" id="btnEdit" onclick="editarTXT(${i})">
+                            Editar
+                            </button>
                     </div>`
         }
     }
-
-    console.log (div)
 
     listaDeNotas.innerHTML = div
 
@@ -194,6 +195,30 @@ function apagarTudo() {
     localStorage.setItem("todasNotas", JSON.stringify(notas))
 
     mostrarLista()
+
+
+}
+
+function editarTXT(x) {
+
+    let textArea = document.getElementById("textArea");
+    let nome = document.getElementById("nome");
+    let matricula = document.getElementById("matricula");
+    let telefone = document.getElementById("telefone");
+    let data = document.getElementById("data");
+    let button = document.getElementById("btnNotas");
+
+    let notas = JSON.parse(localStorage.getItem("todasNotas"));
+
+    textArea.value = notas[x].textArea;
+    nome.value = notas[x].nome;
+    matricula.value = notas[x].matricula;
+    telefone.value = notas[x].telefone;
+    data.value = notas[x].data;
+
+    button.click();
+    excluirNota(x);
+    
 
 
 }
