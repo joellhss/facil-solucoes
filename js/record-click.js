@@ -117,6 +117,7 @@ function salvarTxt () {
     let matricula = document.getElementById("matricula")
     let telefone = document.getElementById("telefone")
     let data = document.getElementById("data")
+    let convenio = document.getElementById("convenio")
     
     let notas = JSON.parse(localStorage.getItem("todasNotas"));
 
@@ -130,7 +131,8 @@ function salvarTxt () {
         matricula: matricula.value,
         telefone: telefone.value,
         textArea: textArea.value,
-        data: data.value
+        data: data.value,
+        convenio: convenio.value
     }
 
     notas.push(auxNotas);
@@ -143,6 +145,7 @@ function salvarTxt () {
     matricula.value = "";
     telefone.value = "";
     data.value = ""
+    convenio.value = ""
 }
 
 
@@ -166,6 +169,7 @@ function mostrarLista() {
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">${notas[i].nome}</h5>
+                            <p class="card-text"><span class="font-weight-bold">Convênio: </span>${notas[i].convenio}</p>
                             <p class="card-text"><span class="font-weight-bold">Matrícula: </span>${notas[i].matricula}</p>
                             <p class="card-text"><span class="font-weight-bold">Telefone: </span>${notas[i].telefone}</p>
                             <p class="card-text"><span class="font-weight-bold">Observações: </span>${notas[i].textArea}</p>
@@ -206,6 +210,7 @@ function editarTXT(x) {
     let matricula = document.getElementById("matricula");
     let telefone = document.getElementById("telefone");
     let data = document.getElementById("data");
+    let convenio = document.getElementById("convenio");
     let button = document.getElementById("btnNotas");
 
     let notas = JSON.parse(localStorage.getItem("todasNotas"));
@@ -215,10 +220,24 @@ function editarTXT(x) {
     matricula.value = notas[x].matricula;
     telefone.value = notas[x].telefone;
     data.value = notas[x].data;
+    convenio.value = notas[x].convenio;
 
     button.click();
     excluirNota(x);
-    
+}
 
 
+function exibeConvenios() {
+    let datalist = document.getElementById("conveniosLista")
+    let convenios = ["Aracati/CE", "Barbalha/CE", "Chorozinho/CE", "Crateús/CE", "Crato/CE", "Icó/CE", "Juazeiro do Norte/CE", "Tianguá/CE", "Dourados/MS", "Ipatinga/MG", "Cmaetá/PA", "Itupiranga/PA", "Marabá/PA", "Alagoa Grande/PB", "Cabedelo/PB", "Cajazeiras/PB", "Campina Grande/PB", "Defensoria/PB", "Esperança/PB", "Guarabira", "Itabaiana/PB", "Mamanguape/PB", "Monteiro", "Patos/PB", "Pedras de Fogo/PB", "Queimadas/PB", "Rio Tinto/PB", "São Bento/PB", "Sapé/PB", "Sumé/PB", "TCE/PB", "Piraquara/PB", "Pernambuco", "Caruaru/PE", "Defensoria/PE", "Floresta/PE", "Garanhuns/PE", "Jaboatão/PE", "Macaparana/PE", "Olinda/PE", "Paulista/PE", "Recife/PE", "São Vicente/PE", "Serra Talhada/PE", "Vicência/PE", "Búzios/RJ", "Itatiaia/RJ", "Niterói/RJ", "Resende/RJ", "Apodi/RN", "Areia Branca/RN", "Baraúna/RN", "CAERN", "Caicó/RN", "Caraúbas/RN", "Ipanguaçu/RN", "Jucurutu/RN", "Lagoa Nova/RN", "Monte Alegre/RN", "Parelhas/RN", "Tibau/RN", "TRT4/RS", "Caçapava/SP"]
+    console.log(convenios)
+    let lista = ""
+    convenios.sort();
+    console.log(convenios)
+
+    for (let i = 0; i < convenios.length; i++) {
+        lista += `<option value="${convenios[i]}"></option>`
+    }
+
+    datalist.innerHTML = lista
 }
