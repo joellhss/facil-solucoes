@@ -182,10 +182,9 @@ header {
 }
 
 .fechamento {
-    width: 260px;
     background-color: var(--blue);
     border: none;
-    height: 80px;
+    height: 50px;
     color: var(--white);
     font-size: 16px;
     border-radius: 05px;
@@ -196,10 +195,9 @@ header {
     color: white;
 }
 #fechamento2 {
-    width: 90px;
     background-color: var(--blue);
     border: none;
-    height: 80px;
+    height: 50px;
     color: var(--white);
     font-size: 16px;
     border-radius: 05px;
@@ -283,4 +281,22 @@ color: #ffffff;
     cursor: pointer;
     filter: invert(0.8) brightness(200%) sepia(0%) saturate(0%) hue-rotate(20deg);
   }
+
+.manual {
+    position: relative;
+}
+
+.btnManual {
+    background-color: #063651;
+    color: #FFFFFF;
+    width: 40%;
+    border: none;
+}
+
+.btnManual:hover {
+    background-color: var(--blue3);
+    color: #FFFFFF;
+    width: 40%;
+    border: none;
+}
 
